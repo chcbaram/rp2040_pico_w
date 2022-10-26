@@ -117,6 +117,7 @@ void cliWifi(cli_args_t *args)
       delay(10);
     }
 
+    logPrintf("\n");
     for (int i=0; i<scan_list.len; i++)
     {
       const char *auth_str[] = {"OPEN", "WPA_TKIP_PSK", "WPA2_AES_PSK", "WPA2_MIXED_PSK"};
